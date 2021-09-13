@@ -173,6 +173,10 @@ header {
   margin-right: 36px;
 }
 
+.header-menu {
+  display: none;
+}
+
 @media screen and (max-width: 1080px) {
 .header-logo-pc {
   display: none;
@@ -186,6 +190,31 @@ header {
 
 .header-list {
   display: none;
+}
+
+.header-menu {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 21px;
+  margin-right: 20px;
+}
+
+.header-menu-line {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 3px;
+  transform: translate(0, -50%);
+  background-color: black;
+}
+
+.header-menu-line:first-child {
+  top: 0;
+}
+
+.header-menu-line:last-child {
+  top: 100%;
 }
 }
 
